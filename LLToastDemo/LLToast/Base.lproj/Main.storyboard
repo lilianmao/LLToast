@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImg" translatesAutoresizingMaskIntoConstraints="NO" id="1sZ-SQ-giL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOz-96-kfo">
+                                <rect key="frame" x="127" y="318.5" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="bFQ-H2-AHs"/>
+                                    <constraint firstAttribute="height" constant="30" id="lFo-Ub-Xq4"/>
+                                </constraints>
+                                <state key="normal" title="backgroundImg">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jla-hQ-h0q">
+                                <rect key="frame" x="147" y="398.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="oNs-pE-zTp"/>
+                                    <constraint firstAttribute="height" constant="30" id="ve2-04-vfp"/>
+                                </constraints>
+                                <state key="normal" title="success">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zam-mL-FBE">
+                                <rect key="frame" x="162" y="478.5" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Nd-v8-oYF"/>
+                                    <constraint firstAttribute="width" constant="50" id="ReE-TT-FE0"/>
+                                </constraints>
+                                <state key="normal" title="error">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UOz-96-kfo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2iy-fo-BCc"/>
+                            <constraint firstItem="1sZ-SQ-giL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G0B-9v-OvT"/>
+                            <constraint firstItem="1sZ-SQ-giL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJb-Vv-chX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1sZ-SQ-giL" secondAttribute="bottom" id="Lny-nd-dGE"/>
+                            <constraint firstItem="UOz-96-kfo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7I-03-EV1"/>
+                            <constraint firstItem="Jla-hQ-h0q" firstAttribute="top" secondItem="UOz-96-kfo" secondAttribute="bottom" constant="50" id="aL7-Bh-qtb"/>
+                            <constraint firstItem="Zam-mL-FBE" firstAttribute="top" secondItem="Jla-hQ-h0q" secondAttribute="bottom" constant="50" id="drG-I0-esL"/>
+                            <constraint firstItem="Zam-mL-FBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jD4-UU-tSB"/>
+                            <constraint firstItem="Jla-hQ-h0q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oeq-IN-ra5"/>
+                            <constraint firstAttribute="trailing" secondItem="1sZ-SQ-giL" secondAttribute="trailing" id="rii-Qz-gdB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImgBtn" destination="UOz-96-kfo" id="ing-W8-aLY"/>
+                        <outlet property="errorBtn" destination="Zam-mL-FBE" id="Nog-0v-0YZ"/>
+                        <outlet property="successBtn" destination="Jla-hQ-h0q" id="utL-gO-Fpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImg" width="360" height="640"/>
+    </resources>
+</document>

@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15BB6E242CEB2ECE1EA5C07E /* libPods-LLToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247F953972AD774172A4B519 /* libPods-LLToast.a */; };
+		F230350D1DFAA7C7003CE289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F230350C1DFAA7C7003CE289 /* main.m */; };
+		F23035101DFAA7C7003CE289 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F230350F1DFAA7C7003CE289 /* AppDelegate.m */; };
+		F23035131DFAA7C7003CE289 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23035121DFAA7C7003CE289 /* ViewController.m */; };
+		F23035161DFAA7C7003CE289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23035141DFAA7C7003CE289 /* Main.storyboard */; };
+		F23035181DFAA7C7003CE289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23035171DFAA7C7003CE289 /* Assets.xcassets */; };
+		F230351B1DFAA7C7003CE289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23035191DFAA7C7003CE289 /* LaunchScreen.storyboard */; };
+		F23035261DFAA7C8003CE289 /* LLToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F23035251DFAA7C8003CE289 /* LLToastTests.m */; };
+		F23035311DFAA7C8003CE289 /* LLToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F23035301DFAA7C8003CE289 /* LLToastUITests.m */; };
+		F23035411DFAA84C003CE289 /* LLToast.m in Sources */ = {isa = PBXBuildFile; fileRef = F23035401DFAA84C003CE289 /* LLToast.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F23035221DFAA7C8003CE289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23035001DFAA7C7003CE289 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23035071DFAA7C7003CE289;
+			remoteInfo = LLToast;
+		};
+		F230352D1DFAA7C8003CE289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23035001DFAA7C7003CE289 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23035071DFAA7C7003CE289;
+			remoteInfo = LLToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E76AD17902CA9707558DAF /* Pods-LLToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLToast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLToast/Pods-LLToast.debug.xcconfig"; sourceTree = "<group>"; };
+		1C585C213F0CD7A4FA4D76BC /* Pods-LLToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLToast.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLToast/Pods-LLToast.release.xcconfig"; sourceTree = "<group>"; };
+		247F953972AD774172A4B519 /* libPods-LLToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLToast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23035081DFAA7C7003CE289 /* LLToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F230350C1DFAA7C7003CE289 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F230350E1DFAA7C7003CE289 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F230350F1DFAA7C7003CE289 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F23035111DFAA7C7003CE289 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F23035121DFAA7C7003CE289 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F23035151DFAA7C7003CE289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F23035171DFAA7C7003CE289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F230351A1DFAA7C7003CE289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F230351C1DFAA7C7003CE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23035211DFAA7C8003CE289 /* LLToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23035251DFAA7C8003CE289 /* LLToastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLToastTests.m; sourceTree = "<group>"; };
+		F23035271DFAA7C8003CE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F230352C1DFAA7C8003CE289 /* LLToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23035301DFAA7C8003CE289 /* LLToastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLToastUITests.m; sourceTree = "<group>"; };
+		F23035321DFAA7C8003CE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F230353F1DFAA84C003CE289 /* LLToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLToast.h; sourceTree = "<group>"; };
+		F23035401DFAA84C003CE289 /* LLToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLToast.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23035051DFAA7C7003CE289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BB6E242CEB2ECE1EA5C07E /* libPods-LLToast.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F230351E1DFAA7C8003CE289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23035291DFAA7C8003CE289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5001970A52B6BEBD42F909 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01E76AD17902CA9707558DAF /* Pods-LLToast.debug.xcconfig */,
+				1C585C213F0CD7A4FA4D76BC /* Pods-LLToast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D3BE878B5A8D353D49A452E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247F953972AD774172A4B519 /* libPods-LLToast.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F23034FF1DFAA7C7003CE289 = {
+			isa = PBXGroup;
+			children = (
+				F230350A1DFAA7C7003CE289 /* LLToast */,
+				F23035241DFAA7C8003CE289 /* LLToastTests */,
+				F230352F1DFAA7C8003CE289 /* LLToastUITests */,
+				F23035091DFAA7C7003CE289 /* Products */,
+				4C5001970A52B6BEBD42F909 /* Pods */,
+				4D3BE878B5A8D353D49A452E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F23035091DFAA7C7003CE289 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23035081DFAA7C7003CE289 /* LLToast.app */,
+				F23035211DFAA7C8003CE289 /* LLToastTests.xctest */,
+				F230352C1DFAA7C8003CE289 /* LLToastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F230350A1DFAA7C7003CE289 /* LLToast */ = {
+			isa = PBXGroup;
+			children = (
+				F230350E1DFAA7C7003CE289 /* AppDelegate.h */,
+				F230350F1DFAA7C7003CE289 /* AppDelegate.m */,
+				F23035111DFAA7C7003CE289 /* ViewController.h */,
+				F23035121DFAA7C7003CE289 /* ViewController.m */,
+				F23035141DFAA7C7003CE289 /* Main.storyboard */,
+				F230353E1DFAA7E8003CE289 /* LLToast */,
+				F230350B1DFAA7C7003CE289 /* Supporting Files */,
+			);
+			path = LLToast;
+			sourceTree = "<group>";
+		};
+		F230350B1DFAA7C7003CE289 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F23035191DFAA7C7003CE289 /* LaunchScreen.storyboard */,
+				F230351C1DFAA7C7003CE289 /* Info.plist */,
+				F23035171DFAA7C7003CE289 /* Assets.xcassets */,
+				F230350C1DFAA7C7003CE289 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F23035241DFAA7C8003CE289 /* LLToastTests */ = {
+			isa = PBXGroup;
+			children = (
+				F23035251DFAA7C8003CE289 /* LLToastTests.m */,
+				F23035271DFAA7C8003CE289 /* Info.plist */,
+			);
+			path = LLToastTests;
+			sourceTree = "<group>";
+		};
+		F230352F1DFAA7C8003CE289 /* LLToastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F23035301DFAA7C8003CE289 /* LLToastUITests.m */,
+				F23035321DFAA7C8003CE289 /* Info.plist */,
+			);
+			path = LLToastUITests;
+			sourceTree = "<group>";
+		};
+		F230353E1DFAA7E8003CE289 /* LLToast */ = {
+			isa = PBXGroup;
+			children = (
+				F230353F1DFAA84C003CE289 /* LLToast.h */,
+				F23035401DFAA84C003CE289 /* LLToast.m */,
+			);
+			path = LLToast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F23035071DFAA7C7003CE289 /* LLToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23035351DFAA7C8003CE289 /* Build configuration list for PBXNativeTarget "LLToast" */;
+			buildPhases = (
+				9D714911DE21B828B5BAC07D /* [CP] Check Pods Manifest.lock */,
+				F23035041DFAA7C7003CE289 /* Sources */,
+				F23035051DFAA7C7003CE289 /* Frameworks */,
+				F23035061DFAA7C7003CE289 /* Resources */,
+				3F179364EFB9C2CDA405470F /* [CP] Embed Pods Frameworks */,
+				21A7AB61AD675709ABD86958 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLToast;
+			productName = LLToast;
+			productReference = F23035081DFAA7C7003CE289 /* LLToast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F23035201DFAA7C8003CE289 /* LLToastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23035381DFAA7C8003CE289 /* Build configuration list for PBXNativeTarget "LLToastTests" */;
+			buildPhases = (
+				F230351D1DFAA7C8003CE289 /* Sources */,
+				F230351E1DFAA7C8003CE289 /* Frameworks */,
+				F230351F1DFAA7C8003CE289 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F23035231DFAA7C8003CE289 /* PBXTargetDependency */,
+			);
+			name = LLToastTests;
+			productName = LLToastTests;
+			productReference = F23035211DFAA7C8003CE289 /* LLToastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F230352B1DFAA7C8003CE289 /* LLToastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F230353B1DFAA7C8003CE289 /* Build configuration list for PBXNativeTarget "LLToastUITests" */;
+			buildPhases = (
+				F23035281DFAA7C8003CE289 /* Sources */,
+				F23035291DFAA7C8003CE289 /* Frameworks */,
+				F230352A1DFAA7C8003CE289 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F230352E1DFAA7C8003CE289 /* PBXTargetDependency */,
+			);
+			name = LLToastUITests;
+			productName = LLToastUITests;
+			productReference = F230352C1DFAA7C8003CE289 /* LLToastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23035001DFAA7C7003CE289 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = lee;
+				TargetAttributes = {
+					F23035071DFAA7C7003CE289 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6N4LW89MGE;
+						ProvisioningStyle = Automatic;
+					};
+					F23035201DFAA7C8003CE289 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6N4LW89MGE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F23035071DFAA7C7003CE289;
+					};
+					F230352B1DFAA7C8003CE289 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6N4LW89MGE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F23035071DFAA7C7003CE289;
+					};
+				};
+			};
+			buildConfigurationList = F23035031DFAA7C7003CE289 /* Build configuration list for PBXProject "LLToast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F23034FF1DFAA7C7003CE289;
+			productRefGroup = F23035091DFAA7C7003CE289 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23035071DFAA7C7003CE289 /* LLToast */,
+				F23035201DFAA7C8003CE289 /* LLToastTests */,
+				F230352B1DFAA7C8003CE289 /* LLToastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F23035061DFAA7C7003CE289 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F230351B1DFAA7C7003CE289 /* LaunchScreen.storyboard in Resources */,
+				F23035181DFAA7C7003CE289 /* Assets.xcassets in Resources */,
+				F23035161DFAA7C7003CE289 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F230351F1DFAA7C8003CE289 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F230352A1DFAA7C8003CE289 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A7AB61AD675709ABD86958 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLToast/Pods-LLToast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F179364EFB9C2CDA405470F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLToast/Pods-LLToast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D714911DE21B828B5BAC07D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23035041DFAA7C7003CE289 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23035131DFAA7C7003CE289 /* ViewController.m in Sources */,
+				F23035101DFAA7C7003CE289 /* AppDelegate.m in Sources */,
+				F230350D1DFAA7C7003CE289 /* main.m in Sources */,
+				F23035411DFAA84C003CE289 /* LLToast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F230351D1DFAA7C8003CE289 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23035261DFAA7C8003CE289 /* LLToastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23035281DFAA7C8003CE289 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23035311DFAA7C8003CE289 /* LLToastUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F23035231DFAA7C8003CE289 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23035071DFAA7C7003CE289 /* LLToast */;
+			targetProxy = F23035221DFAA7C8003CE289 /* PBXContainerItemProxy */;
+		};
+		F230352E1DFAA7C8003CE289 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23035071DFAA7C7003CE289 /* LLToast */;
+			targetProxy = F230352D1DFAA7C8003CE289 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F23035141DFAA7C7003CE289 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23035151DFAA7C7003CE289 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F23035191DFAA7C7003CE289 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F230351A1DFAA7C7003CE289 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F23035331DFAA7C8003CE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F23035341DFAA7C8003CE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F23035361DFAA7C8003CE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E76AD17902CA9707558DAF /* Pods-LLToast.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = LLToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LLToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F23035371DFAA7C8003CE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C585C213F0CD7A4FA4D76BC /* Pods-LLToast.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = LLToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LLToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F23035391DFAA7C8003CE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = LLToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LLToastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLToast.app/LLToast";
+			};
+			name = Debug;
+		};
+		F230353A1DFAA7C8003CE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = LLToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LLToastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLToast.app/LLToast";
+			};
+			name = Release;
+		};
+		F230353C1DFAA7C8003CE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = LLToastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LLToastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLToast;
+			};
+			name = Debug;
+		};
+		F230353D1DFAA7C8003CE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6N4LW89MGE;
+				INFOPLIST_FILE = LLToastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lee.LLToastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLToast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23035031DFAA7C7003CE289 /* Build configuration list for PBXProject "LLToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23035331DFAA7C8003CE289 /* Debug */,
+				F23035341DFAA7C8003CE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23035351DFAA7C8003CE289 /* Build configuration list for PBXNativeTarget "LLToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23035361DFAA7C8003CE289 /* Debug */,
+				F23035371DFAA7C8003CE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23035381DFAA7C8003CE289 /* Build configuration list for PBXNativeTarget "LLToastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23035391DFAA7C8003CE289 /* Debug */,
+				F230353A1DFAA7C8003CE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F230353B1DFAA7C8003CE289 /* Build configuration list for PBXNativeTarget "LLToastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F230353C1DFAA7C8003CE289 /* Debug */,
+				F230353D1DFAA7C8003CE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23035001DFAA7C7003CE289 /* Project object */;
+}
