@@ -15,7 +15,7 @@ pod 'LLToast', '~> 1.0.0’
 ```
 2. error msg
 ```objective-c
-[LLToast alloc showError:@"这是一个错误的消息"];
+[LLToast showError:@"这是一个错误的消息"];
 ```
 3. simple toast which have a background image
 ```objective-c
