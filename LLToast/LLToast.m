@@ -119,17 +119,19 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
 }
 
 #pragma mark - 显示成功信息
-- (void)showSuccess:(NSString *)success
++ (void)showSuccess:(NSString *)success
 {
-    [self commonInit];
-    [self showText:success withBackgroundColor:RGB(77, 77, 77) toView:nil];
+    LLToast *toast = [[LLToast alloc] init];
+    [toast commonInit];
+    [toast showText:success withBackgroundColor:RGB(77, 77, 77) toView:nil];
 }
 
 #pragma mark - 显示错误信息
-- (void)showError:(NSString *)error
++ (void)showError:(NSString *)error
 {
-    [self commonInit];
-    [self showText:error withBackgroundColor:RGB(231, 0, 18) toView:nil];
+    LLToast *toast = [[LLToast alloc] init];
+    [toast commonInit];
+    [toast showText:error withBackgroundColor:RGB(231, 0, 18) toView:nil];
 }
 
 #pragma mark - 根据文字确定区域

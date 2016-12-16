@@ -46,7 +46,7 @@
  */
 - (void)successBtnClick
 {
-    [[[LLToast alloc] init] showSuccess:@"这是一个成功的消息"];
+    [LLToast showSuccess:@"这是一个成功的消息"];
 }
 
 #pragma mark - errorBtnClick
@@ -55,7 +55,7 @@
  */
 - (void)errorBtnClick
 {
-    [[[LLToast alloc] init] showError:@"这是一个错误的消息"];
+    [LLToast showError:@"这是一个错误的消息"];
 }
 
 @end

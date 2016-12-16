@@ -44,7 +44,7 @@
  
  @param success success message
  */
-- (void)showSuccess:(NSString *)success;
++ (void)showSuccess:(NSString *)success;
 
 /**
  显示失败消息（默认偏红色）
@@ -52,7 +52,7 @@
  
  @param error error message
  */
-- (void)showError:(NSString *)error;
++ (void)showError:(NSString *)error;
 
 /**
  显示带背景图片的消息
