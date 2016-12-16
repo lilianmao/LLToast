@@ -11,11 +11,11 @@ pod 'LLToast', '~> 1.0.0’
 ## **Usage**
 1. success msg
 ```objective-c
-[[[LLToast alloc] init] showSuccess:@"这是一个成功的消息"];
+[LLToast showSuccess:@"这是一个成功的消息"];
 ```
 2. error msg
 ```objective-c
-[[[LLToast alloc] init] showError:@"这是一个错误的消息"];
+[LLToast alloc showError:@"这是一个错误的消息"];
 ```
 3. simple toast which have a background image
 ```objective-c
