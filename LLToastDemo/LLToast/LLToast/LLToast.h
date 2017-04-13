@@ -1,9 +1,9 @@
 //
 //  LLToast.h
-//  CZEDraft
+//  LLToast
 //
 //  Created by 李林 on 2016/12/8.
-//  Copyright © 2016年 czbank. All rights reserved.
+//  Copyright © 2016年 lee. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -61,7 +61,7 @@
  @param text 文本
  @param image 背景图片
  */
-- (void)showText:(NSString *)text withBackgroundImg:(UIImage *)image;
++ (void)showText:(NSString *)text withBackgroundImg:(UIImage *)image;
 
 /**
  根据文字和字体大小返回size

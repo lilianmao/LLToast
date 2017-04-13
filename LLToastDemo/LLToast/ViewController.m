@@ -34,9 +34,8 @@
  */
 - (void)backgroundImgBtnClick
 {
-    LLToast *toast = [[LLToast alloc] init];
     UIImage *bgImg = [UIImage imageNamed:@"bgImg"];
-    [toast showText:@"这是一条带背景的消息" withBackgroundImg:bgImg];
+    [LLToast showText:@"这是一条带背景的消息" withBackgroundImg: bgImg];
 }
 
 #pragma mark - successBtnClick

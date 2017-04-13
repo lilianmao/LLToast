@@ -1,9 +1,9 @@
 //
 //  LLToast.m
-//  CZEDraft
+//  LLToast
 //
 //  Created by 李林 on 2016/12/8.
-//  Copyright © 2016年 czbank. All rights reserved.
+//  Copyright © 2016年 lee. All rights reserved.
 //
 
 #import "LLToast.h"
@@ -25,6 +25,15 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
 
 @implementation LLToast
 
+#pragma mark - sharedInstance
++ (LLToast *)sharedInstance {
+    static id instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
 
 #pragma mark - commonInit
 - (void)commonInit
@@ -38,11 +47,6 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
 #pragma mark - 核心函数，将text放在view上
 - (void)showText:(NSString *)text withBackgroundColor:(UIColor *)color toView:(UIView *)view
 {
-    
-    /* 
-     1 获取需要添加的view（排除键盘的window）
-     achieve the view which will show the toast
-     */
     if(view == nil){
         NSArray<UIWindow *> *windows = [UIApplication sharedApplication].windows;
         view = [windows lastObject];
@@ -50,24 +54,16 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
             view = windows[windows.count - 2];
     }
     
-    /*
-     2 text - 根据文字获取文字的宽高
-     achieve the text size according to the text and textFont
-     */
     CGSize textSize = [LLToast sizeWithText:text andFontSize:self.fontSize];
     
-    /*
-     3 backgroundImg - 根据文字的宽高已经背景图片画出backgroundImg
-     draw the backgroundImg according to textSize and backgroundImg
-    */
+   
     CGRect frame = [LLToast textPositionWithTextSize:textSize andLeftMargin:self.leftMargin andTopMargin:self.topMargin];
     UIView *originImg = [[UIView alloc] initWithFrame:frame];
     if(self.bgImage){
-        // 3.1 根据文字将图片压缩
+        // 根据文字将图片压缩
         UIImage *bgImg = [LLToast compressOriginalImage:self.bgImage toSize:frame.size];
         UIImageView *bgImageView = [[UIImageView alloc] initWithImage:bgImg];
         
-        // 3.2 将图片加入到原始的背景图片上
         [originImg addSubview:bgImageView];
         
     }
@@ -75,15 +71,11 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
     UIView *backgroundImg = [LLToast clipCornerWithView:originImg andRadius:self.backImgCornerRadius];
     [view addSubview:backgroundImg];
     
-    /* 
-     4 添加文字到backgroundImg
-     add the text Label to the backgroundImg
-     */
     UILabel *textLabel = [LLToast createLabelWithText:text andTextFont:self.fontSize andTextColor:self.textColor];
     [LLToast addLabel:textLabel toView:backgroundImg];
     
     /*
-     4.1 动态绑定（绑定到一个window上）
+     动态绑定（绑定到一个window上）- 防止toast重复出现
      bind the backgroundImg to the window
      */
     UIView *previousImg = (UIView *)objc_getAssociatedObject(view, &LLBackGroundImg);
@@ -91,10 +83,7 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
     objc_setAssociatedObject(view, &LLBackGroundImg, backgroundImg, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     
-    /* 
-     5 Animation - 实现动画（用pop动画实现）
-     use the Pop animation to show animation
-     */
+    // pop animation
     CGFloat duration = 3.0f;
     CGFloat delay = 2.0f;
     CGFloat distance = 50;
@@ -110,27 +99,30 @@ static const NSString * const LLBackGroundImg = @"LLBackGroundImg";
 }
 
 #pragma mark - 显示带背景的信息
-- (void)showText:(NSString *)text withBackgroundImg:(UIImage *)image
++ (void)showText:(NSString *)text withBackgroundImg:(UIImage *)image
 {
-    [self commonInit];
-    self.bgImage = image;
-    self.textColor = RGB(77, 77, 77);
-    [self showText:text withBackgroundColor:[UIColor whiteColor] toView:nil];
+    LLToast *toast = [LLToast sharedInstance];
+    [toast commonInit];
+    toast.bgImage = image;
+    toast.textColor = RGB(231, 0, 18);
+    [toast showText:text withBackgroundColor:[UIColor whiteColor] toView:nil];
 }
 
 #pragma mark - 显示成功信息
 + (void)showSuccess:(NSString *)success
 {
-    LLToast *toast = [[LLToast alloc] init];
+    LLToast *toast = [LLToast sharedInstance];
     [toast commonInit];
+    toast.bgImage = NULL;
     [toast showText:success withBackgroundColor:RGB(77, 77, 77) toView:nil];
 }
 
 #pragma mark - 显示错误信息
 + (void)showError:(NSString *)error
 {
-    LLToast *toast = [[LLToast alloc] init];
+    LLToast *toast = [LLToast sharedInstance];
     [toast commonInit];
+    toast.bgImage = NULL;
     [toast showText:error withBackgroundColor:RGB(231, 0, 18) toView:nil];
 }
 
